@@ -1,0 +1,24 @@
+Question 1 : Write a blog on Difference between HTTP1.1 vs HTTP2
+Answer:
+HTTP stands for hypertext transfer protocol 
+HTTP1.1HTTP2* HTTP/1.1 which was created in 1997
+* It works on the textual format.
+* There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+* It uses requests resource in lining for use getting multiple pages
+* It compresses data by itself.* HTTP/2 which was created in 2015
+* It works on the binary protocol.
+* It allows multiplexing so one TCP connection is required for multiple requests.
+* It uses PUSH frame by server that collects all multiple pages 
+* It uses HPACK for data compression.
+Question  2 : Write a blog about objects and its internal representation in Javascript
+Answer :
+           In JavaScript, objects are a fundamental data type that allows you to store and organize data. Objects are instances of the Object class and can be thought of as collections of key-value pairs. These key-value pairs are called properties, where the keys are strings (or symbols) and the values can be any valid JavaScript data type, including other objects.
+
+Internal Representation:
+1. Hidden Class System:
+* JavaScript engines use a hidden class system to optimize property access.
+* Objects with similar structures share the same hidden class, allowing for more efficient property access.
+2. Property Storage:
+* Properties of an object can be stored using a combination of a property table and inline caching.
+* The property table contains the properties and their values, while inline caching optimizes property access by caching the property's location in memory
+
